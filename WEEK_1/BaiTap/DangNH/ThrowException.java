@@ -5,9 +5,6 @@
  */
 package ExceptionHandling;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *
  * @author 404NotFound
@@ -17,10 +14,10 @@ public class ThrowException {
         try {
             double divide = divide(2,0);
         } catch (MyException ex) {
-            System.out.println(ex.getMessage());
+            ex.getMsg();
         }
     }
-    public static double divide(int a, int b) throws MyException{
+    public static double divide(int a, int b) throws MyException {
         try {
             return a/b;
         } catch (Exception e) {

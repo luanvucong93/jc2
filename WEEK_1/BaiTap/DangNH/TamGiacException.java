@@ -9,13 +9,9 @@ package ExceptionHandling;
  *
  * @author 404NotFound
  */
-public class MyException extends Exception{
-    public MyException(String msg) {
+public class TamGiacException extends Exception{
+    public TamGiacException(){}
+    public TamGiacException(String msg){
         super(msg);
     }
-    
-    public void getMsg(){
-        System.out.println("Hello");
-    }
 }
-
